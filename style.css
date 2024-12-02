@@ -1,0 +1,97 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: beige;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Quantico", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+}
+
+header {
+    background-color:rgba(0,14,1,255);
+    max-height: 10%;
+    text-align: center;
+}
+
+img {
+    height: 115px;
+    max-width: 115px;
+}
+
+nav {
+    margin-top: 20px;
+    background-color:rgba(59, 58, 58, 0.329);
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+main {
+    height: 400px;
+    text-align: center;
+    padding-left: 240px;
+    padding-right: 240px;
+    padding-top: 140px;
+}
+
+footer {
+    background-color: black;
+    height: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 72px;
+    color: white;
+}
+p {
+    font-size: 18px;
+    color: white;
+}
+
+a {
+    font-size: 18px;
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 13px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+footer h1 {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.song {
+    text-align: center;
+    padding-bottom: 150px;
+}
+

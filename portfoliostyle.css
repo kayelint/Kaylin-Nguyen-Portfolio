@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Roboto Slab', serif;
+}
+
+body {
+    background-color: rgba(0,14,1,255);
+    background-image: url('images/background3.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Quantico", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgba(0,14,1,255);
+    text-align: center;
+    max-height: 10%;
+    padding-top: 8px;
+}
+
+header img {
+    height: 115px;
+    max-width: 115px;
+}
+
+nav {
+    margin-top: 20px;
+    background-color:rgba(0, 64, 24, 0.329);
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 13px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+}
+
+nav a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:active {
+    color: white;
+    text-decoration: none;
+}
+
+.bento-grid {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    padding-bottom: 5px;
+}
+
+.bento-grid p {
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.column {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-item {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.gallery-item:hover {
+    transform: scale(1.02);
+}
+
+.gallery-item-content {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.gallery-item-content iframe, 
+.gallery-item-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-item-caption {
+    font-size: 0.8rem;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 6px 10px;
+    margin: 0;
+    text-align: left;
+    font-weight: bold;
+  }
+
+@media (max-width: 768px) {
+    .photo-gallery {
+        grid-template-columns: 1fr;
+    }
+}
